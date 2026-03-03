@@ -2,7 +2,7 @@ export type ProductItem = {
   title: string;
   subtitle: string;
   link: string;
-  children?: ProductItem[];
+  special?: boolean;
 };
 
 export const productsData: ProductItem[] = [
@@ -22,26 +22,22 @@ export const productsData: ProductItem[] = [
     link: 'alfabank://webFeature?type=moneyBox&url=https://online.alfabank.ru/mobile-money-box/',
   },
   {
-    title: 'Новые сбережения',
-    subtitle: '3 новых продукта для накоплений',
-    link: '',
-    children: [
-      {
-        title: 'А-Счёт',
-        subtitle: 'Простой способ накопить',
-        link: 'alfabank://multistep-route?version=2&fromModule=FORM&alias=brokerage-account-open-alias&prefilledDataID=investbox',
-      },
-      {
-        title: 'А-Вклад',
-        subtitle: 'До 14,5% годовых с защитой капитала',
-        link: 'alfabank://webFeature?type=recommendation&url=https%3A%2F%2Fweb.alfabank.ru%2Fsdui%2F%3Fendpoint%3Dv1%252Fdeposit-view%252Fshowcase%253Fproduct%253Ddeposit%26source=OPEN_NEW_PRODUCT%26screenName%3DShowcase',
-      },
-      {
-        title: 'Программа долгосрочных сбережений',
-        subtitle: 'Надёжный способ накопить с поддержкой государства',
-        link: 'alfabank://sdui_screen?fromCurrent=true&shouldUseBottomSafeArea=true&endpoint=v1/invest-long-term-savings-view/products/1001',
-      },
-    ],
+    title: 'Инвестсчёт',
+    subtitle: 'Простой способ накопить',
+    link: 'alfabank://multistep-route?version=2&fromModule=FORM&alias=brokerage-account-open-alias&prefilledDataID=investbox',
+    special: true,
+  },
+  {
+    title: 'Инвествклад',
+    subtitle: 'До 14,5% годовых с защитой капитала',
+    link: 'alfabank://webFeature?type=recommendation&url=https%3A%2F%2Fweb.alfabank.ru%2Fsdui%2F%3Fendpoint%3Dv1%252Fdeposit-view%252Fshowcase%253Fproduct%253Ddeposit%26source=OPEN_NEW_PRODUCT%26screenName%3DShowcase',
+    special: true,
+  },
+  {
+    title: 'Программа долгосрочных сбережений',
+    subtitle: 'Надёжный способ накопить с поддержкой государства',
+    link: 'alfabank://sdui_screen?fromCurrent=true&shouldUseBottomSafeArea=true&endpoint=v1/invest-long-term-savings-view/products/1001',
+    special: true,
   },
 
   {
