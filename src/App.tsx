@@ -26,7 +26,7 @@ export const App = () => {
         open={true}
         onClose={() => {
           window.gtag('event', '7283_exit_click', { var: 'var4' });
-          window.location.replace('https://alfabank.ru/');
+          window.location.replace('alfabank://open_new_product');
         }}
         contentClassName={appSt.btmContent}
         title="Накопления"
