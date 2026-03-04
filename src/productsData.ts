@@ -19,7 +19,7 @@ export const productsData: ProductItem[] = [
   {
     title: 'Копилка для зарплаты',
     subtitle: 'Можно откладывать от 5% дохода',
-    link: 'alfabank://webFeature?type=moneyBox&url=https://online.alfabank.ru/mobile-money-box/',
+    link: 'alfabank://webFeature?type=moneyBox&url=https%3A%2F%2Fonline.alfabank.ru%2Fmobile-money-box%2F',
   },
   {
     title: 'Инвестсчёт',
@@ -43,7 +43,7 @@ export const productsData: ProductItem[] = [
   {
     title: 'Мои цели',
     subtitle: 'Поставьте цель, а мы поможем накопить',
-    link: 'alfabank:///goals',
+    link: 'alfabank://goals',
   },
   {
     title: 'Золотая копилка',
